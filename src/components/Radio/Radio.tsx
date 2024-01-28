@@ -7,7 +7,7 @@ export default function Radio({
   radios,
   filteredOption,
   onChangeHandler,
-  name
+  name,
 }: {
   radios: RadioType[];
   filteredOption: string;
@@ -16,16 +16,15 @@ export default function Radio({
 }) {
   return radios.map((radio) => (
     <div className="radio">
-      
-        <input
-          type="radio"
-          name={name}
-          value={radio.value}
-          checked={radio.value === filteredOption}
-          onChange={onChangeHandler}
-        /><label htmlFor={radio.value}>
-        {radio.title}
-      </label>
+      <input
+        type="radio"
+        name={name}
+        id={radio.value}
+        value={radio.value}
+        checked={radio.value === filteredOption}
+        onChange={onChangeHandler}
+      />
+      <label htmlFor={radio.value}>{radio.title}</label>
     </div>
   ));
 }

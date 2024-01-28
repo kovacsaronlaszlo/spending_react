@@ -1,11 +1,12 @@
-import { useState } from 'react'
 import './App.css'
+import { SpendingForm, SpendingList } from './components'
 
 function App() {
 
   return (
     <>
-      <div>First step begin</div>
+      <SpendingForm />
+      <SpendingList />
     </>
   )
 }

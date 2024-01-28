@@ -1,0 +1,46 @@
+.spending-element {
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.spending-element-info {
+    align-items: center;
+}
+
+.spending-element-icon {
+    margin: 16px;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #4b47eb;
+}
+
+.spending-element-info-text {
+    flex-direction: column;
+}
+
+.spending-element-info-text p {
+    margin: 0;
+    text-align: left;
+    max-width: 560px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.spending-element-info-text span {
+    text-align: left;
+}
+
+.spending-element-buttonContainer {
+    padding: 16px;
+    gap: 12px;
+}
+
+.spending-element-buttonContainer b {
+    align-items: center;
+    gap: 8px;
+}

@@ -1,0 +1,20 @@
+.spending-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    width: calc(100% - 32px);
+}
+
+.spending-form-description {
+    width: 450px;
+}
+
+.spending-form-amount {
+    max-width: 100px;
+}
+
+.spending-form-currency {
+    max-width: 100px;
+}

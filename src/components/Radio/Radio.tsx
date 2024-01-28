@@ -1,15 +1,29 @@
-import React from "react";
-
 type RadioType = {
   value: string;
   title: string;
 };
 
-export default function Radio({radios, selectedRadio, onChangeHandler}: {radios: RadioType[], selectedRadio: RadioType, onChangeHandler: () => void}) {
-  return radios.map(radio => (
+export default function Radio({
+  radios,
+  filteredOption,
+  onChangeHandler,
+  name
+}: {
+  radios: RadioType[];
+  filteredOption: string;
+  name: string;
+  onChangeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
+  return radios.map((radio) => (
     <div className="radio">
-      <label>
-        <input type="radio" value={radio.value} checked={radio.value === selectedRadio.value} onChange={onChangeHandler} />
+      
+        <input
+          type="radio"
+          name={name}
+          value={radio.value}
+          checked={radio.value === filteredOption}
+          onChange={onChangeHandler}
+        /><label htmlFor={radio.value}>
         {radio.title}
       </label>
     </div>
